@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    {{>navbar}}
+
+    <section class="weather">
+
+        <div class="searchInput">
+            <input type="text" id="search" placeholder="   enter city name">
+
+            <input type="submit" id="btn" value="search">
+        </div>
+
+<div class="city" >
+           <img  class="location" src="/images/location.png" alt=""><h1 id="cityName">  Banglore</h1>
+</div>
+
+        <div class="weatherInfo">
+
+            <div class="temperature">
+                <img src="/images/sun.png" alt="">
+                <h3>Temparature</h3>
+                <span id="temp_value">0 </span><span><sup>0</sup>C</span>
+            </div>
+
+            <div class="humidity">
+                <img src="/images/Humidity.png" alt="">
+
+                <h3>Humidity</h3>
+                <span id="humidity_value">>30</span><span>%</span>
+            </div>
+
+            <div class="wind">
+                <img src="/images/wind.png" alt="">
+
+                <h3>Wind</h3>
+                <span id="wind_value"> 10</span><span> km/h</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    {{>footer}}
+
+<script src="/js/weather.js"></script>
+
+</body>
+
+</html>

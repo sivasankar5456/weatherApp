@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+<link rel="stylesheet" href="./css/style.css">
+
+<style>
+
+
+</style>
+
+</head>
+<body>
+    {{>navbar}}
+
+<section class="content1">
+   <div class="sec">
+     <div class="deg">
+
+<div class="bigdeg">
+    <h1 id="mainTemp" >34 </h1><sup>0</sup>
+</div>
+<span id="subTemp">30 <sup>o </sup >C</span><span>/20 <sup>0</sup>C </span>
+    </div>
+
+
+    <div class="image">
+          <h1 class="cityname"> <sup> <img class="location" src="/images/location.png" alt=""></sup> Banglore</h1>  
+<img class="mobile" src="/images/mobile.png" alt="">
+
+    </div>
+   </div>
+</section>
+
+
+<section class="weather_check">
+        <div class="data">
+            <h2>Weather Assistant</h2>
+            <h1>In Your Phone</h1>
+            <p>Find Out Rain and floods beckon as La <br> Nina looms and IOD deepens.</p> <br>
+            <a href="./weather">Check Weather</a>
+        </div>
+        <div>
+            <img  src="/images/bodyimage.jpg" alt="">
+        </div>
+        <div>
+            <img id="body2" height="600" src="/images/body2.jpg" alt="">
+        </div>
+    </section>
+
+    {{>footer}}
+
+
+</body>
+</html>
